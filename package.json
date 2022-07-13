@@ -1,0 +1,21 @@
+{
+    "name": "bss-test-week2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "watch:ts": "tsc -w",
+        "watch:alias": "tsc-alias -w",
+        "watch:js": "parcel watch --no-hmr ./build/index.js --out-dir ./public/js --public-url /js --out-file bundle.js",
+        "start": "concurrently yarn:watch:*"
+    },
+    "devDependencies": {
+        "concurrently": "^7.2.2",
+        "parcel-bundler": "^1.12.5",
+        "tsc-alias": "^1.6.11",
+        "typescript": "^4.7.4"
+    },
+    "dependencies": {
+        "chart.js": "^3.8.0"
+    }
+}

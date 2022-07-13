@@ -1,0 +1,54 @@
+@media (min-width: 740px) {
+    .sidebar-background {
+        display: none !important;
+    }
+}
+
+@media (max-width: 739px) {
+    .main {
+        margin-left: 0px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+        animation: show_sidebar 0.5s ease forwards;
+    }
+
+    .content {
+        margin: 3rem 1rem 1rem 1rem;
+    }
+
+    .content__btn--menu {
+        display: block;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+    }
+
+    .content__view {
+        justify-content: space-between;
+    }
+
+    .sidebar__title {
+        display: none;
+    }
+
+    .sidebar__user {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    .content {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .responsive-table {
+        overflow-x: auto;
+    }
+}
